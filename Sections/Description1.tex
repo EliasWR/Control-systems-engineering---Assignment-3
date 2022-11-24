@@ -1,0 +1,37 @@
+\section{Description of Task 1, DC-motor}
+
+The first system that is described is a Direct current motor. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{Images/DC-Motor.png}
+    \caption{Schematic of a DC-Motor}
+    \label{fig:DC-motor}
+\end{figure}
+
+When taking all forces into consideration, the motor can be described by the formula given below:
+\begin{equation}
+    \centering
+    P_DC (s) = \frac{K}{(Js + b)(Ls + R) + K^2}
+\end{equation}
+
+The parameters of the system is given below:
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c|}
+
+\hline
+Parametre & Symbol & Value & Unit \\
+\hline
+Rotor moment of inertia & J & 1 & $Kgm^2$\\ 
+\hline
+Motor viscous friction constant & b & 1 & Nms \\  
+\hline
+Motor torque constant & K & $\sqrt{2}$ & Nm/Amp \\
+\hline
+Electric resistance & R & 4 & \ohm \\
+\hline
+Electric inductance & L & 1 & H \\
+\hline
+\end{tabular}
+\label{tab:Parameters}
+\end{center}
